@@ -10,9 +10,9 @@ find_package(BISON REQUIRED)
 set(LEXER_INPUT Source/Parser/lexer.l)
 set(PARSER_INPUT Source/Parser/parser.ypp)
 
-set(LEXER_OUTPUT Source/Parser/lexer.cpp)
-set(PARSER_OUTPUT Source/Parser/parser.tab.cpp)
-set(PARSER_HEADER Source/Parser/parser.tab.hpp)
+set(LEXER_OUTPUT ${CMAKE_BINARY_DIR}/lexer.cpp)
+set(PARSER_OUTPUT ${CMAKE_BINARY_DIR}/parser.tab.cpp)
+set(PARSER_HEADER ${CMAKE_BINARY_DIR}/parser.tab.hpp)
 
 FLEX_TARGET(Lexer ${LEXER_INPUT} ${LEXER_OUTPUT})
 BISON_TARGET(Parser ${PARSER_INPUT} ${PARSER_OUTPUT} COMPILE_FLAGS --defines=${PARSER_HEADER})
