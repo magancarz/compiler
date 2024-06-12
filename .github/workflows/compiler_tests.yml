@@ -12,12 +12,6 @@ jobs:
         run: |
           git submodule update --init --recursive
       - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
-      - name: Restore cached tests build files
-        id: tests-build-files-restore
-        uses: actions/cache/restore@v4
-        with:
-          path: build
-          key: tests-build
       - name: Files in the repository
         run: |
           ls ${{ github.workspace }}
@@ -29,10 +23,3 @@ jobs:
         run: |
           cd build
           ctest --verbose -C Debug
-      - name: Save tests build files
-        id: tests-build-files-save
-        uses: actions/cache/save@v4
-        with:
-          path: |
-            build
-          key: tests-build-${{ hashFiles('build') }}
