@@ -2,7 +2,7 @@
 ## Description
 A program that compiles an imperative language into virtual machine code. More detailed language and machine specifications are included in the labor4.pdf file with some example code. The compiler is written in C++ and uses Flex and Bison.
 
-At the moment the project is going through a renovation, as I have learned a lot more concepts about C++, clean code, design patterns and TDD since the creation of the project.
+At the moment the project is going through a renovation, as I have learned a lot more concepts about C++, clean code, design patterns and TDD since the creation of the project and the project is too cool to be left in the past.
 
 ## Language specification
 
@@ -57,7 +57,7 @@ END
 ```
 
 ## How to run the project
- To use the project, you need to run the Makefile for the compiler and the virtual machine (which are located in the main folder and the virtual-machine/), then write some code, save it in ie. "test_file", run the compiler with `./kompilator {test_file} {output_file}` which will generate machine code to the output file and the last step is to run the virtual machine with `./maszyna-wirtualna {output_file}` command.
+To use the project, you need to run the CMake for the compiler and then Makefile for the virtual machine (which are located in the main folder and the virtual-machine/), then go to the directory where the executable file was created and write some code, save it in ie. "test_file", run the compiler with `./SimpleCompiler {test_file} {output_file}` which will generate machine code to the output file and the last step is to run the virtual machine executable with `./maszyna-wirtualna {output_file}` command.
  
 ## Description of tests
 
