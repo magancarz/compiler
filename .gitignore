@@ -1,5 +1,5 @@
 out
 out.mr
-virtual-machine/maszyna-wirtualna
-virtual-machine/maszyna-wirtualna-cln
+VirtualMachine/maszyna-wirtualna
+VirtualMachine/maszyna-wirtualna-cln
 cmake-build-debug/
