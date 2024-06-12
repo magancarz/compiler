@@ -1,0 +1,25 @@
+name: Compiler Tests
+run-name: Compiler Tests
+on: [push]
+jobs:
+  Tests:
+    runs-on: self-hosted
+    steps:
+      - run: echo "Job is running on a ${{ runner.os }} runner"
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Fetch git submodules
+        run: |
+          git submodule update --init --recursive
+      - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
+      - name: Files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - name: Build CMake project
+        run: |
+          cmake -B build -S . -DBUILD_TESTING=ON -DCMAKE_BUILD_TYPE=Debug
+          cmake --build build -j $(nproc --all)
+      - name: Run tests
+        run: |
+          cd build
+          ctest --verbose -C Debug

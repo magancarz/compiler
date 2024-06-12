@@ -63,22 +63,19 @@ I added unit tests for Memory class which creates Memory mockup, perform some op
 
 ## Quick overview of files and folders structure
 
-### src
+### Source
 
 Source folder contains compiler code:
-- codeGenerator (contains machine code generator),
-- memory (code for virtual machine memory mockup with some extensions like procedures and more complex variables),
-- parser (Flex and Bison code),
-- variables (code for variable implementation).
+- CodeGenerator (contains machine code generator),
+- Memory (code for virtual machine memory mockup with some extensions like procedures and more complex variables),
+- Parser (Flex and Bison code),
+- Variables (code for variable implementation).
 
-### tests
-Folder that contains example code for testing, code that should give errors and correct output files.
+### Tests
+Folder that contains example code for testing and code that should give errors.
 
-### tools
-Folder with Flex and Bison version used in the compiler.
-
-### virtual-machine
-Folder with virtual-machine files and code.
+### VirtualMachine
+Folder with virtual machine files and code.
 
 ## Contributors
 * [Mateusz Gancarz](https://github.com/magancarz) - compiler code

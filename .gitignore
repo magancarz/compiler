@@ -1,7 +1,6 @@
-.vs/
-x64/
 out
 out.mr
-kompilator
-virtual-machine/maszyna-wirtualna
-virtual-machine/maszyna-wirtualna-cln
+VirtualMachine/maszyna-wirtualna
+VirtualMachine/maszyna-wirtualna-cln
+cmake-build-debug/
+build/
