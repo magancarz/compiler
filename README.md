@@ -57,7 +57,7 @@ END
 ```
 
 ## How to run the project
-To use the project, you need to run the CMake for the compiler and then Makefile for the virtual machine (which are located in the main folder and the virtual-machine/), then go to directory where the executable file was created and write some code, save it in ie. "test_file", run the compiler with `./SimpleCompiler {test_file} {output_file}` which will generate machine code to the output file and the last step is to run the virtual machine executable with `./maszyna-wirtualna {output_file}` command.
+To use the project, you need to run the CMake for the compiler and then Makefile for the virtual machine (which are located in the main folder and the virtual-machine/), then go to the directory where the executable file was created and write some code, save it in ie. "test_file", run the compiler with `./SimpleCompiler {test_file} {output_file}` which will generate machine code to the output file and the last step is to run the virtual machine executable with `./maszyna-wirtualna {output_file}` command.
  
 ## Description of tests
 
