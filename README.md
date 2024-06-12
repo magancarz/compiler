@@ -1,6 +1,8 @@
 # Compiler of a simple imperative language
 ## Description
-A program that compiles an imperative language into virtual machine code. More detailed language and machine specifications are included in the labor4.pdf file with some example code. The compiler is written in C++ and uses Flex and Bison. I also added some unit tests for memory management of the virtual machine prototype in my code and test written in bash that checks if the output for the test files is correct.
+A program that compiles an imperative language into virtual machine code. More detailed language and machine specifications are included in the labor4.pdf file with some example code. The compiler is written in C++ and uses Flex and Bison.
+
+At the moment the project is going through a renovation, as I have learned a lot more concepts about C++, clean code, design patterns and TDD since the creation of the project.
 
 ## Language specification
 

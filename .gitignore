@@ -4,3 +4,4 @@ VirtualMachine/maszyna-wirtualna
 VirtualMachine/maszyna-wirtualna-cln
 cmake-build-debug/
 build/
+.idea/
