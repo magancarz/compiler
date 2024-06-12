@@ -59,10 +59,6 @@ END
 ## How to run the project
 To use the project, you need to run the CMake for the compiler and then Makefile for the virtual machine (which are located in the main folder and the virtual-machine/), then go to the directory where the executable file was created and write some code, save it in ie. "test_file", run the compiler with `./SimpleCompiler {test_file} {output_file}` which will generate machine code to the output file and the last step is to run the virtual machine executable with `./maszyna-wirtualna {output_file}` command.
  
-## Description of tests
-
-I added unit tests for Memory class which creates Memory mockup, perform some operations on it (adds many variables and procedures), then checks if returned values of chosen variables and procedures are correct. Second test is written in bash and involves running three test programs through the process of compiling and running it on the virtual machine, then checks if the output is correct (correct output is defined in ie. {test_program_name}_correct.out).
-
 ## Quick overview of files and folders structure
 
 ### Source
