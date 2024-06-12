@@ -1,9 +1,5 @@
 #!/bin/bash
 
-make
-
-( cd virtual-machine && make )
-
 for FILE in $(find tests/ | grep ".imp")
 do
 	FILE_NAME="$( echo "$FILE" | awk '{ print substr( $0, 1, length($0) - 4 ) }' )"
