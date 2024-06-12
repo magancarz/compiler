@@ -1,0 +1,36 @@
+[komentarz]
+PROCEDURE check(n,d,p) IS [koment]
+VAR r
+BEGIN
+    p:=0;
+    r:=n%d;
+    WHILE r=0 DO
+        [koment
+            wiloniead
+        ]
+        n:=n/d;
+        p:=p+1;
+        r:=n%d;
+    ENDWHILE
+END
+
+PROGRAM IS
+VAR n,m,potega,dzielnik
+BEGIN
+    n := 1234567890;
+    dzielnik:=2;
+    m:=dzielnik*dzielnik;
+    WHILE n>=m DO
+        check(n,dzielnik,potega);
+        IF potega>0 THEN
+            WRITE dzielnik;
+            WRITE potega;
+        ENDIF
+        dzielnik:=dzielnik+1;
+        m:=dzielnik*dzielnik;
+    ENDWHILE
+    IF n!=1 THEN
+        WRITE n;
+        WRITE 1;
+    ENDIF
+END
